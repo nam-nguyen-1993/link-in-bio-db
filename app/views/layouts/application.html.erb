@@ -8,6 +8,103 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+        <style>
+        /*
+        * {
+            border: 1px red dashed;
+        }
+        */
+
+        html {
+            min-height: 100%;
+        }
+
+        .main-container{
+            max-width: 640px;
+            margin: auto;
+        }
+
+        body {
+            color: rgba(245,245,245,1);
+            min-height: 100%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background: linear-gradient(165deg, #142850, #143862, #134e75, #116989, #0e8b9e, #09b5b4, #04ccb1); /* made at https://learnui.design/tools/gradient-generator.html */
+            font-family: "Raleway"
+        }
+
+        a {
+            color: rgba(245,245,245,1);
+            text-decoration: none;
+        }
+
+        .image-row {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .name-row {
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: "Playfair Display";
+            font-size: 24px;
+            font-weight: 900;
+        }
+
+        .subtitle-row {
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: "Raleway"
+            font-size:20px;
+            font-weight: 500;
+        }
+
+        .social-icons-row {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .item {
+            background-color: rgba(67,203,184, 0.5);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            border-radius: 1000px;
+            padding: 5px;
+            padding-right: 53px;
+            box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+        }
+
+        .avatar-image {
+            width: 128px;
+            height: 128px;
+            object-fit: cover;
+            border-radius: 128px;
+            border: solid green;
+        }
+
+        .thumbnail{
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 48px;
+        }
+
+        .link-text {
+            text-align: center;
+            flex-grow: 1;
+        }
+    </style>
+
+    <!--Google Fonts-->>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
   </head>
 
   <body>

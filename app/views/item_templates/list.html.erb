@@ -1,10 +1,42 @@
 <!-- app/views/item_templates/list.html.erb --> 
 
-<h1>Hello, world!</h1> 
-<% Item.all.each do |the_item| %>
-  <div>
-    <%= the_item.id %>
-  </div>
-<% end %>
 
+<div class="main-container">
+        <div class="name-row">
+            Nam Nguyen     
+        </div>
 
+        <div class="subtitle-row">
+            Chicago Booth MBA | Investment Analyst | Fintech PM | BCG
+        </div>  
+
+        <div class="social-icons-row">
+            <a href="https://www.linkedin.com/in/namhoangnguyen1/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> Linkedin
+            </a>
+
+            <a href="https://x.com/Nammiee19" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i> Twitter
+            </a>
+
+            <a href="https://github.com/nam-nguyen-1993" target="_blank">
+                <i class="fa-brands fa-square-github"></i> Github
+            </a>
+
+            <a href="https://www.instagram.com/goldnano/" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+        </div>
+
+          <div class="links-row">
+            <% @list_of_items.each do |the_item| %>
+            <div class="item">
+                <img class="thumbnail" src="<%= the_item.thumbnail_url %>" alt="Random image">
+                <a class="link-text" target="_blank" href="<%= the_item.link_url %>">
+                    <%= the_item.link_description %>
+                </a>
+            </div>
+          <%end%>
+        </div> <!--links-row-->
+
+    </div> <!--main-container-->
